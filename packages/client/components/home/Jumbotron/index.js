@@ -4,7 +4,7 @@ import styles from './styles.scss';
 
 const Jumbotron = () => (
   <div>
-  <div style={{backgroundImage: 'linear-gradient(to right bottom, rgba(180, 255, 255, 0.8), rgba(75, 172, 184, 0.8)), url(/static/swimmer.png)'}} className={styles.wrapper}>
+  <div style={{backgroundImage: 'linear-gradient(to right bottom, rgba(180, 255, 255, 0.8), rgba(75, 172, 184, 0.8)), url(/static/swim.jpg)'}} className={styles.wrapper}>
     <div>
       <h1>Eastside Swim School</h1>
     </div>
