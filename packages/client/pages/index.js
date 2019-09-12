@@ -3,7 +3,8 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import { Header } from '../components/header'
-import {Jumbotron} from "../components/Jumbotron";
+import {Jumbotron} from "../components/home/Jumbotron";
+import {InfoBoxes} from "../components/home/info-boxes";
 
 import '../styles/index.scss'
 
@@ -15,9 +16,9 @@ const Home = () => (
     </Head>
 
     <Header />
-
     <Jumbotron/>
-    </div>
-)
+    <InfoBoxes/>
+  </div>
+);
 
 export default Home
