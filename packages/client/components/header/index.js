@@ -3,11 +3,11 @@ import Link from 'next/link'
 import styles from './styles.scss'
 
 const links = [
-  { href: '/', label: 'About' },
+  { href: '/about', label: 'About' },
   { href: '/', label: 'Classes and Lessons' },
   { href: '/', label: 'Other Programs' }
 ].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
+  link.key = `nav-link-${link.href}-${link.label}`;
   return link
 });
 

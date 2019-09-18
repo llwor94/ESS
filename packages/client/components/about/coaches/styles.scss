@@ -1,0 +1,36 @@
+.thumbnail {
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #65bb4b;
+}
+
+.selected {
+  border: 2px solid gray;
+}
+
+
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.innerwrapper {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  flex-wrap: wrap;
+}

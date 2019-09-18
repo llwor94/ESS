@@ -3,19 +3,22 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import { Header } from '../components/header'
-import {Jumbotron} from "../components/home/Jumbotron";
-import {InfoBoxes} from "../components/home/info-boxes";
+import {Nav} from '../components/about/nav'
+import {Coaches} from '../components/about/coaches'
+
 import '../styles/index.scss'
 
 const Home = () => (
   <div>
     <Head>
-      <title>Home</title>
+      <title>About</title>
     </Head>
 
     <Header />
-    <Jumbotron/>
-    <InfoBoxes/>
+    <div style={{marginTop: '74px', display: 'flex'}}>
+    <Nav />
+    <Coaches/>
+    </div>
   </div>
 );
 
