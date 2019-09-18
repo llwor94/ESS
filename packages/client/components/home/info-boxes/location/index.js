@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react';
+import clsx from 'clsx'
 
-function LocationContainer({google, styles}) {
+function LocationContainer({ google, styles }) {
   const [marker, setMarker] = useState(true);
 
   return (
-    <div className={styles.section} style={{maxWidth: '500px'}}>
+    <div className={clsx(styles.section, styles.location)}>
       <h2>Find us</h2>
-    <div className={styles.mapwrapper}>
+    <div className={styles.mapWrapper}>
       <Map
-        style={{ width: '440px', border: '1px solid white', borderRadius: '4px', height: '300px', position: 'relative' }}
+        style={{ border: '1px solid white', borderRadius: '4px', height: '300px', position: 'relative' }}
         google={google}
         initialCenter={{ lat: 47.709727, lng: -122.129865 }}
         zoom={12}
