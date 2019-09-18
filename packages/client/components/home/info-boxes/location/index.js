@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react';
 
 function LocationContainer({google, styles}) {
-  const [marker, setMarker] = useState(undefined);
+  const [marker, setMarker] = useState(true);
 
   return (
-    <div className={styles.section}>
+    <div className={styles.section} style={{maxWidth: '500px'}}>
       <h2>Find us</h2>
     <div className={styles.mapwrapper}>
       <Map
-        style={{ width: '440px', border: '1px solid white', borderRadius: '4px', height: '400px', position: 'relative' }}
+        style={{ width: '440px', border: '1px solid white', borderRadius: '4px', height: '300px', position: 'relative' }}
         google={google}
         initialCenter={{ lat: 47.709727, lng: -122.129865 }}
         zoom={12}
@@ -30,8 +30,14 @@ function LocationContainer({google, styles}) {
             </p>
           </div>
         </InfoWindow>
-      </Map>
-    </div>
+       </Map>
+      </div>
+      <div>
+        <h3 style={{fontWeight: 'bold'}}>Willows Prep School</h3>
+        <p>The Willows Prep Pool is located on the campus of the Willows Preparatory School (1.5 miles from the South of Hollywood Schoolhouse on Woodinville Redmond Road the former property of Washington Cathedral)</p>
+        <br/>
+        <p>*The pool is located in the North East corner of the two story brick colored building with the blue roof.</p>
+      </div>
     </div>
   )
 }
