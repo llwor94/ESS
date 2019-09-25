@@ -14,6 +14,8 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
           <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet"/>
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"/>
+
           <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js" />
         </Head>
         <body>

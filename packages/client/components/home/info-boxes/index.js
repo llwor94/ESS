@@ -8,7 +8,7 @@ function InfoBoxes() {
   return (
     <div className={styles.wrapper}>
       <Contact styles={styles}/>
-      <Location styles={styles}/>
+      {/*<Location styles={styles}/>*/}
     </div>
   )
 }
