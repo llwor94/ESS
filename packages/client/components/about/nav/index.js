@@ -3,18 +3,31 @@ import {Drawer, DrawerContent} from '@rmwc/drawer';
 import {List, ListItem} from '@rmwc/list'
 import '@material/drawer/dist/mdc.drawer.css'
 import styles from './styles.scss'
+import {useRouter} from 'next/router'
 
-const Nav = () => (
-  <Drawer className={styles.drawer}>
-    <DrawerContent>
-      <List>
-        <ListItem>Our Coaches</ListItem>
-        <ListItem>Pizza</ListItem>
-        <ListItem>Icecream</ListItem>
-      </List>
-    </DrawerContent>
-  </Drawer>
-)
+const Nav = () => {
+  const router = useRouter();
+
+  const handleRoute = (current) => {
+    router.replace(`/about/?selected=${current}`, `/about/${current}`, {shallow: true})
+  }
+
+  return(
+    <Drawer className={styles.drawer}>
+      <DrawerContent>
+        <List>
+          <ListItem onClick={() => handleRoute('coaches')}>
+            Our Coaches
+          </ListItem>
+          <ListItem onClick={() => handleRoute('faq')}>
+            FAQ
+          </ListItem>
+          <ListItem>Icecream</ListItem>
+        </List>
+      </DrawerContent>
+    </Drawer>
+  )
+}
 
 export {Nav}
 
